@@ -1,0 +1,160 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;}
+	
+body{
+	font-size:14px;
+	color:#6e6e6e;
+	background: url(../images/背景1.jpg) top center fixed;
+	}
+a,a:link,a:visited{
+	color:#000000;
+	text-decoration:none; 
+	font-weight: bold;
+	}
+a:hover{
+	text-decoration: underline;
+	}
+.banner{
+	width:980px;
+	margin:auto;
+	}
+.banner img{
+	width:100%;
+	}
+.gundong{width:980px;
+height:50px;
+line-height:50px;
+background:#dd9137;
+margin:auto;
+margin-bottom:10px;
+text-align:center;
+font-size:28px;
+color:white;
+font-style: italic;
+font-weight: 100;
+}
+.nav{
+	width:980px;
+	 height:60px;
+	 line-height:60px; 
+	 background-color:#CCCCCC;
+	 margin:10px auto; 
+	 text-align:center; 
+	  }
+.nav a{
+	font-size:24px;
+	 margin:10px;
+	 }
+.nav a:hover{ 
+	color:#aa5500; 
+	text-decoration:none;
+	}
+.main{
+	width:980px;
+	 height:auto;
+	  background:#ffffff; 
+	  margin:auto;
+	  padding-top:50px;
+	  padding-bottom:50px;
+	  }
+.main .cont{
+	width:800px;
+	margin:auto;
+	}
+.main .cont p{
+	padding:10px;
+	font-size:16px;
+	color:333;
+	text-indent:32px;
+	line-height:28px;
+	}
+.main .cont img{
+	width:100%;
+	height:auto;
+	}
+.main video{
+	display: block;
+	    margin: 0 auto; 
+	    max-width: 100%;
+	    height: auto;
+	}
+.foot{
+	width:980px;
+    height:50px;
+    line-height:50px;
+	background:#fff;
+	margin:auto;
+	text-align:center;
+	margin-top:30px;
+	font-size:20px;
+	color:#000;
+	}
+
+.banner {
+    width: 980px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    height: 400px; 
+}
+
+.slider-container {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: none; 
+}
+
+.slide.active {
+    display: block; 
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+}
